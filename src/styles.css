@@ -2,3 +2,4 @@
 :root{--slider:#8d4329}.slider-field input[type=range]{accent-color:var(--slider);width:100%;padding:0;min-height:34px;border:0}.slider-field b{display:block;text-align:center;color:var(--slider);font-size:20px}.form button{margin:8px 6px 8px 0}
 .wheel-field select{appearance:auto;display:block;width:100%;min-height:60px;margin-top:8px;padding:0 18px;border:2px solid #e1ded4;border-radius:20px;background:#fff;font-size:20px;color:#1d1b19}
 .actions{display:flex;gap:12px;margin-top:18px}.actions>button:not(.primary){padding:14px 20px;border:1px solid #d9d2c9;background:#fff;border-radius:18px;font-size:18px}.error{color:#a32e2e;background:#fff0f0;padding:10px 14px;border-radius:12px}.success{color:#477344;background:#eff8ed;padding:10px 14px;border-radius:12px}
+.reading{background:#faf6ee;border-left:4px solid #8d4329;border-radius:12px;padding:14px 18px;margin:14px 0}.reading h3{margin:0 0 8px;color:#8d4329}.reading p{margin:6px 0}

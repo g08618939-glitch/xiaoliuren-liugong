@@ -8,3 +8,4 @@ const meaning:Record<string,{trend:string;state:string;block:string;advice:strin
  空亡:{trend:'结果暂不明朗，现阶段不宜仓促下结论。',state:'当前可能存在信息缺口或预期落空。',block:'资源、时间或关键条件不足。',advice:'先补信息、做验证，再决定是否投入。'}
 };
 export function interpret(values:number[]){const names=values.map(i=>PALACES[i]);const a=meaning[names[2]];return {names,overall:`三传为${names.join(' → ')}。${a.trend}`,state:a.state,obstacle:a.block,advice:a.advice,summary:`初传${names[0]}代表事情起点，中传${names[1]}代表过程变化，末传${names[2]}代表当前收束与后续倾向。`};}
+export function palaceInterpretation(name:string){return meaning[name]??{trend:'暂无该宫位的解析资料。',state:'信息不足。',block:'规则资料不足。',advice:'请结合现实情况判断。'};}
